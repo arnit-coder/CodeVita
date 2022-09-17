@@ -20,12 +20,12 @@ from django import http
 # Create your views here.
 
 
-def sendSimpleEmail(request, emailto):
-    res = send_mail("Subject", "Description", "arnit@gmail.com", [emailto])
-    return HttpResponse('%s' % res)
+# def sendSimpleEmail(request, emailto):
+#     res = send_mail("Subject", "Description", "arnit@gmail.com", [emailto])
+#     return HttpResponse('%s' % res)
 
 
-@api_view(['POST', 'GET'])
+@api_view(['REQUEST','POST'])
 def Application(request):
     if request.method == 'POST':
         name = request.POST.get('name')
