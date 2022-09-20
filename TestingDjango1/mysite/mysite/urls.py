@@ -23,5 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('context.urls')),
     # path('application/',views.Application),
-    path('',views.Application,name='Application'),
 ]
