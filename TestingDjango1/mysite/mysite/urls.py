@@ -21,6 +21,6 @@ import context
 from context import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include('context.urls')),
+    path('',include('context.urls')),
     # path('application/',views.Application),
 ]
